@@ -12,6 +12,19 @@ I need to figure out how to connect to these websites an dgrabe the right data
 - make the user do the robot bypass part if there is one?
 - this is still easier technically right????
 - meh, just for fun
+
+So one of the first steps of this is to get the UI working or to get a UI idea in the works
+
+Actually I feel like the better solution here is to get a way to set up the series of issues
+around actually getting a way to connect the websites to the app and to get these to work.
+
+Do we want all the grades in one place or just a quick easy access to each website??
+I'd prefer all in one place to be completely honest
+But if the best I can get is a button that takes you to the login of each that'll work too.
+
+Maybe the user will setup what data to grab?
+
+we'll see.
  */
 package atry.gradestoget;
 
