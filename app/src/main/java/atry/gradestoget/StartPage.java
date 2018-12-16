@@ -31,6 +31,10 @@ package atry.gradestoget;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+
 public class StartPage extends AppCompatActivity {
 
     @Override
@@ -38,5 +42,14 @@ public class StartPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_page);
         System.out.println("This is my app right now.... oh boy.");
+    }
+
+    public static boolean pingHost(String host, int port, int timeout) {
+        try (Socket socket = new Socket()) {
+            socket.connect(new InetSocketAddress(host, port), timeout);
+            return true;
+        } catch (IOException e) {
+            return false; //Either timeout or unreachable or failed DNS lookup.
+        }
     }
 }
