@@ -52,4 +52,5 @@ public class StartPage extends AppCompatActivity {
             return false; //Either timeout or unreachable or failed DNS lookup.
         }
     }
+
 }
