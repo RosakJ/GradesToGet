@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".StartPage">
 
+    <Button
+        android:id="@+id/getData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Data"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <TextView
+        android:id="@+id/webDataText"
+        android:layout_width="366dp"
+        android:layout_height="323dp"
+        android:text="Web Data"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="13dp" />
 </android.support.constraint.ConstraintLayout>
