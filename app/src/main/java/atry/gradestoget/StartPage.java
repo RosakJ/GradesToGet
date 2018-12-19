@@ -30,6 +30,7 @@ package atry.gradestoget;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import java.io.IOException;
@@ -49,7 +50,13 @@ public class StartPage extends AppCompatActivity {
 
     public void configureGetDataButton() {
         Button getData = (Button) findViewById(R.id.getData);
-        
+        getData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("This is where you'd put the button to do stuff.");
+            }
+        });
+
     }
     public static boolean pingHost(String host, int port, int timeout) {
         try (Socket socket = new Socket()) {
